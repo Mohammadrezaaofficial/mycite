@@ -1,0 +1,46 @@
+/*title*/
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+h2{
+    position: relative;
+    font-size: 6rem;
+    color: #222;
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+}
+@keyframes animate {
+    0%,10%, 100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+.return a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 650px;
+    width: 12%;
+    color: #fff;
+    transition: 1s;
+}
+.return a:hover{
+    background-color: #777;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
