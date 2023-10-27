@@ -302,7 +302,44 @@ ul{
         top: 65%;
     }
     
-    
+    .container.active .main{
+        animation: main-animation 1s ease;
+        transform: perspective(1400px) rotateY(20deg) translateZ(200px) scale(0.5);
+        cursor: pointer;
+        transition: 1s;
+    }
+    @keyframes main-animation{
+        from{
+            transform: translate(0);
+        }
+        to{
+            transform: perspective(1400px) rotateY(20deg) translateZ(200px) scale(0.5);
+        }
+    }
+    .container.active .shadow.one{
+        animation: shadow-one 0.6s ease-out;
+        transform: perspective(1200px) rotateY(20deg) translateZ(150px) scale(0.5);
+    }
+    @keyframes shadow-one{
+        from{
+            transform: translate(0);
+        }
+        to{
+            transform: perspective(1200px) rotateY(20deg) translateZ(150px) scale(0.5);
+        }
+    }
+    .container.active .shadow.two{
+        animation: shadow-two 0.6s ease-out;
+        transform: perspective(1000px) rotateY(20deg) translateZ(100px) scale(0.5);
+    }
+    @keyframes shadow-two{
+        from{
+            transform: translate(0);
+        }
+        to{
+            transform: perspective(1000px) rotateY(20deg) translateZ(100px) scale(0.5);
+        }
+    }
 }
 
 
