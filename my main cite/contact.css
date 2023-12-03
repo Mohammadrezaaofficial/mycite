@@ -1,3 +1,18 @@
+.main-logo{
+    position: relative;
+    right: 85%;
+    padding-top: 2%;
+    width: 10%;
+    height: 10%;
+}
+@media (max-width: 415px){
+    .main-logo{
+       width: 30%;
+       height: 40%;
+       right: 55%;
+       padding-top: 10%;
+    }
+}
 /*title*/
 .title{
     display: flex;
@@ -133,17 +148,7 @@ h2::before{
     font-size: 18px;
     border-radius: 20px;
 }
-@media (max-width: 991px) {
-    .title{
-        padding: 50px;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .contactinfo{
-        margin-bottom: 40px;
-    }
-}
+
 /*return*/
 .return{
     height: 1000px;
@@ -168,7 +173,27 @@ h2::before{
 @media (max-width: 415px){
     h2{
         font-size: 2rem;
-        margin-top: 20%;
+        margin-top: 10%;
+    }
+    .text1{
+        padding-top: 10%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contactinfo{
+        margin-top: -20%;
+        margin-bottom: 20%;
+        margin-left: 35%;
+    }
+    .contactform{
+        width: 80%;
+        padding: 40px;
+        border: 1px solid #333;
+        border-radius: 20px;
+    }
+    .contactform h2{
+        margin-top: 0;
     }
     .return{
         width: 100%;
@@ -182,7 +207,6 @@ h2::before{
         width: 40%;
         margin-right: 30%;
     }
-    
 }
 
 

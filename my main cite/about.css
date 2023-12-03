@@ -29,6 +29,21 @@ h2::before{
         width: 100%;
     }
 }
+.main-logo{
+    position: relative;
+    right: 85%;
+    padding-top: 2%;
+    width: 10%;
+    height: 10%;
+}
+@media (max-width: 415px){
+    .main-logo{
+       width: 30%;
+       height: 40%;
+       right: 55%;
+       padding-top: 10%;
+    }
+}
 .discript{
     position: relative;
     width: 95%;
