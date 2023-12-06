@@ -154,7 +154,9 @@ header{
     border: none;
     border-radius: 25px;
     color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: transform 0.5 ease;
     text-decoration: none;
 }
 /*hamburger menu formation*/
