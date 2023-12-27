@@ -63,6 +63,7 @@ h2::before{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .wrapper .form-box{
     width: 100%;
@@ -147,20 +148,43 @@ h2::before{
     text-decoration: none;
     font-weight: bolder;
     transition: 1s;
+    color: black;
 }
 .login-register a:hover{
     color: #fff;
 }
+.form-box.register .form-title{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+    margin-top: -10%;
+}
+/*Login.js*/
+.wrapper.active .form-box.login{
+    transform: translateX(-100%);
+}
+.wrapper .form-box.login{
+    transition: 1s ease;
+    transform: translateX(0);
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transform: translateX(100%);
+    transition: 1s ease;
+}
+.wrapper.wrapper.active .form-box.register{
+    transform: translateX(0);
+}
 /*return*/
 .return{
-    height: 1000px;
+    height: 250px;
 }
 .return a{
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35%;
+    margin-top: 5%;
     margin-right: 45%;
     width: 12%;
     color: #fff;
@@ -173,9 +197,21 @@ h2::before{
 }
 /*responsive for mobile*/
 @media (max-width: 415px){
-    h2{
+    .title-text{
         font-size: 2rem;
         margin-top: 20%;
+    }
+    .wrapper{
+        width: 75%;
+        margin-right: 10%;
+    }
+    .remember-forgot {
+        width: 150%;
+        margin-right: -20%;
+        font-size: 0.8em;
+    }
+    .login-register{
+        font-size: 0.8em;
     }
     .return{
         width: 100%;
