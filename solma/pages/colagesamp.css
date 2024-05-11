@@ -1,0 +1,52 @@
+.main-logo{
+    position: relative;
+    right: 85%;
+    padding-top: 2%;
+    width: 5%;
+    height: 5%;
+    text-shadow: 0 0 50px #0f0,
+              0 0 100px #0f0,
+              0 0 150px #0f0,
+              0 0 200px #0f0,
+              0 0 250px #0f0;
+              animation: animate1 10s linear  infinite;
+}
+@keyframes animate1 {
+    0%{
+    filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+/*title*/
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+h2{
+    position: relative;
+    font-size: 4rem;
+    color: #222;
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+}
+@keyframes animate {
+    0%,10%, 100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
